@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -7,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
 import { Github, Linkedin, Mail, Phone, Download, ExternalLink, Code, Cpu, Zap, Wifi, Database, Globe } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import ProfileImage from '@/components/ProfileImage';
 
 const Index = () => {
   const { toast } = useToast();
@@ -208,15 +208,7 @@ const Index = () => {
                 <Badge className="bg-neon-cyan/20 text-neon-cyan border-neon-cyan">PCB Design</Badge>
               </div>
             </div>
-            <div className="flex justify-center">
-              <div className="relative">
-                <div className="w-80 h-80 rounded-full bg-gradient-to-br from-neon-blue via-neon-green to-neon-magenta p-1 animate-glow">
-                  <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
-                    <div className="text-6xl animate-float">⚡</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProfileImage />
           </div>
         </div>
       </section>
